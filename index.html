@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>STOP - Jogo da Adedanha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✋ Jogo do STOP</h1>
+
+    <div class="letter-box">
+      <p>Letra sorteada:</p>
+      <h2 id="random-letter">-</h2>
+      <button onclick="document.getElementById('sortearLetra').textContent = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' [Math.floor(Math.random()*26)]">sortearLetra</button>
+    </div>
+
+    <form id="stop-form">
+      <div class="fields">
+        <label>Nome: <input type="text" name="nome" required></label>
+        <label>Animal: <input type="text" name="animal" required></label>
+        <label>Objeto: <input type="text" name="objeto" required></label>
+        <label>Comida: <input type="text" name="comida" required></label>
+        <label>País: <input type="text" name="País" required></label>
+        <label>Marca: <input type="text" name="Marca" required></label>
+        <label>Cor: <input type="text" name="cor" required></label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
